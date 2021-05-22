@@ -131,7 +131,6 @@ contract ETHUSD is usingProvable {
         require(ctr > 0);
         uint256 index = getIndex(_id);
         require(index > 0);
-        uint256 j;
         for (uint256 i = 1; i <= lastID; i++) {
             if (i == index) {
                 delete Data[index];
